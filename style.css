@@ -20,7 +20,7 @@ main{
 }
 
 header{
-    width: 50%;
+    width: 60%;
     box-sizing: border-box;
     margin-left: auto; 
     
@@ -33,6 +33,15 @@ header{
     font-weight:bold;
     color: #a7a5a4;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;         
+  gap: 15px;             
+  margin: 0;
+  padding: 0;
+}
+
 header img {
     vertical-align: middle;
     margin-right: 5px;     
