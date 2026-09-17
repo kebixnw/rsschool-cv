@@ -11,8 +11,18 @@
     <main>
         <div class="back-photo">
             <header>
+                <nav>
+                    <ul>
+                        <li><a href="#about me">Я</a></li>
+                        <li></li><a href="#exp">работа</a>
+                        <li></li><a href="#educ">обучение</a>
+                        <li></li><a href="#lang">яз</a>
+                        <li></li><a href="#skills">скиллы</a>
+                    </ul>
+                </nav>
+
                 <div class="header-languages">
-                    <a href="index.html">[ eng ]</a> | <a href="cv_rus.html" class="active">[ rus ]</a>
+                    <a href="index.html">[ англ ]</a> | <a href="cv_rus.html" class="active">[ рус ]</a>
                 </div>
 
                 <div class="header-themes">
@@ -27,13 +37,13 @@
             <div class="cv-layout">
 
                 <aside class="contacts">
-                    <div class="photo-prof" role="img" aria-label="avatar-profile"></div>
+                    <img src="img/avatar-cv-dark.png" alt="Соколова вероника владимировна" class="photo-prof">
 
                     <div class="info">
-                        <h1>SOKOLOVA VERONIKA</h1>
+                        <h1>Соколова Вероника Владимировна</h1>
                         <p>+375 (33) 366-04-65<br>
                             <a href="kebixnw@gmail.com">kebixnw@gmail.com</a><br>
-                            Minsk<br><br>
+                            Минск<br><br>
                             TG <a href="t.me/qhfdet">@qhfdet</a><br>
                             gH  <a href="https://github.com/kebixnw">@kebixnw</a>
                         </p>
@@ -43,40 +53,40 @@
                 <div class="divider"></div>
 
                 <section class="info-table">
-                        <div class="info-row">
-                            <h2 class="info-title">About me</h2>
-                            <p class="info-desc">smart fresh cool and #swag</p>
+                        <div class="info-row" id="about me">
+                            <h2 class="info-title">Обо мне</h2>
+                            <p class="info-desc">современная молодая крутая зумер</p>
                         </div>
 
-                        <div class="info-row">
-                            <h2 class="info-title">Experience</h2>
-                            <p class="info-desc"><a href="https://bntu.by/" class="info-desc">University BNTU</a><br><a href="https://bntu.by/person/sokolova-veronika">(programmer-technician)</a><br> may 2024 - now</p>
+                        <div class="info-row" id="exp">
+                            <h2 class="info-title">Опыт</h2>
+                            <p class="info-desc"><a href="https://bntu.by/" class="info-desc">БНТУ</a><br><a href="https://bntu.by/person/sokolova-veronika">(техник-программист)</a><br> май 2024 - сейчас</p>
                         </div>
 
-                        <div class="info-row">
-                            <h2 class="info-title">Education</h2>
+                        <div class="info-row" id="educ">
+                            <h2 class="info-title">Образование</h2>
                             <p class="info-desc">
-                                <a href="https://www.ngaek.by/index.php/ru/">College NGAEK</a><br>(programmer-technician) <br>2020 – 2024<br><br>
-                                <a href="https://bntu.by/institutes/mido">University BNTU </a><br>(Software Engineer) <br>2026 – now<br><br>
-                                <a href="https://rs.school/">Rolling Scopes Academy</a> <br>2026 – now
+                                <a href="https://www.ngaek.by/index.php/ru/">БНТУ</a><br>(техник-программист) <br>2020 – 2024<br><br>
+                                <a href="https://bntu.by/institutes/mido">БНТУ</a><br>(инженер-программист) <br>2026 – сейчас<br><br>
+                                <a href="https://rs.school/">Rolling Scopes Academy</a> <br>2026 – сейчас
                             </p>
                         </div>
 
-                        <div class="info-row">
-                            <h2 class="info-title">Languages</h2>
-                            <p class="info-desc">Russian (native)<br>English (B1)</p>
+                        <div class="info-row" id="lang">
+                            <h2 class="info-title">Языки</h2>
+                            <p class="info-desc">Русский (родной)<br>Английский (B1)</p>
                         </div>
 
-                        <div class="info-row">
-                            <h2 class="info-title">Ability</h2>
+                        <div class="info-row" id="skills">
+                            <h2 class="info-title">Способности</h2>
                             <div class="info-desc skills">
                                 <div class="skills-col">
-                                    <p>Hard skills:</p>
+                                    <p>хард скиллы:</p>
                                     <p>HTML<br>CSS<br>Git<br>Figma<br>SQL</p>
                                 </div>
                                 <div class="skills-col">
-                                    <p>Soft skills:</p>
-                                    <p>adaptability<br>teamwork<br>stress tolerance</p>
+                                    <p>софт скилы:</p>
+                                    <p>адаптация<br>комндная работа<br>стрессоустойчивость</p>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +95,16 @@
         </div>
 
         <footer>
+            <div class="footer-col">
+                <img src="img/github-com-logo.png" alt="github">
+            </div>
+            <div class="footer-col">
                 <p>© 2026</p>
+            </div>
+            <div class="footer-col">
+                <img src="img/rs-school-logo.svg" alt="rsschool">
+            </div>
+                
         </footer>
      </main>
 </body>
