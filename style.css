@@ -69,9 +69,24 @@ header img {
 }
 
 footer{
+display: grid;
+grid-template-columns: 40% 20% 40%;
+justify-content: center;
+align-items: center; 
+box-sizing: border-box;
+padding-top: 10px;
+background-color: #FFB800;
     text-align: center;
-    padding-bottom: 20px;
     color: var(--footer-txt);
+}
+.footer-col{
+  gap: 60px;
+}
+
+footer img{
+ width: 15%;
+  height: 10%;
+  object-fit: cover;
 }
 
 
@@ -142,7 +157,6 @@ header a.active{text-shadow: 0px 0px 20px #FF5D00; color:#FF5D00}
 .photo-prof {
     width: 300px;
     height: 300px;
-    background-image: var(--img-ava);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,7 +179,6 @@ header a.active{text-shadow: 0px 0px 20px #FF5D00; color:#FF5D00}
   --btn-txt:    #a7a5a4;   /* текст кнопки */
   --footer-txt: #737373;   /*текст футера*/
   --img-theme:  url("img/light-star.png");
-  --img-ava:    url("img/avatar-cv-light.png");
   --label-text: "dark /";
 }
 
@@ -177,6 +190,5 @@ header a.active{text-shadow: 0px 0px 20px #FF5D00; color:#FF5D00}
   --btn-txt:    #ffffff;   /* текст кнопки */
   --footer-txt: rgb(59, 59, 59);   /*текст футера*/
   --img-theme:  url("img/dark-star.png");
-  --img-ava:    url("img/avatar-cv-dark.png");
   --label-text: "light /";
 }

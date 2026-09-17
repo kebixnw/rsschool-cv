@@ -11,6 +11,16 @@
     <main>
         <div class="back-photo">
             <header>
+                <nav>
+                    <ul>
+                        <li><a href="/about me">ME</a></li>
+                        <li></li><a href="/exp">works</a>
+                        <li></li><a href="/educ">learn</a>
+                        <li></li><a href="/lang">lang</a>
+                        <li></li><a href="/skills">skills</a>
+                    </ul>
+                </nav>
+
                 <div class="header-languages">
                     <a href="index.html" class="active">[ eng ]</a> | <a href="cv_rus.html">[ rus ]</a>
                 </div>
@@ -27,7 +37,7 @@
             <div class="cv-layout">
 
                 <aside class="contacts">
-                    <div class="photo-prof" role="img" aria-label="avatar-profile"></div>
+                    <img src="img/avatar-cv-dark.png" alt="Соколова вероника владимировна" class="photo-prof">
 
                     <div class="info">
                         <h1>SOKOLOVA VERONIKA</h1>
@@ -44,17 +54,17 @@
 
                 <section class="info-table">
                         <div class="info-row">
-                            <h2 class="info-title">About me</h2>
+                            <h2 class="info-title" id="about me">About me</h2>
                             <p class="info-desc">smart fresh cool and #swag</p>
                         </div>
 
                         <div class="info-row">
-                            <h2 class="info-title">Experience</h2>
+                            <h2 class="info-title" id="exp">Experience</h2>
                             <p class="info-desc"><a href="https://bntu.by/" class="info-desc">University BNTU</a><br><a href="https://bntu.by/person/sokolova-veronika">(programmer-technician)</a><br> may 2024 - now</p>
                         </div>
 
                         <div class="info-row">
-                            <h2 class="info-title">Education</h2>
+                            <h2 class="info-title" id="educ">Education</h2>
                             <p class="info-desc">
                                 <a href="https://www.ngaek.by/index.php/ru/">College NGAEK</a><br>(programmer-technician) <br>2020 – 2024<br><br>
                                 <a href="https://bntu.by/institutes/mido">University BNTU </a><br>(Software Engineer) <br>2026 – now<br><br>
@@ -63,12 +73,12 @@
                         </div>
 
                         <div class="info-row">
-                            <h2 class="info-title">Languages</h2>
+                            <h2 class="info-title" id="lang">Languages</h2>
                             <p class="info-desc">Russian (native)<br>English (B1)</p>
                         </div>
 
                         <div class="info-row">
-                            <h2 class="info-title">Ability</h2>
+                            <h2 class="info-title" id="skills">Ability</h2>
                             <div class="info-desc skills">
                                 <div class="skills-col">
                                     <p>Hard skills:</p>
@@ -85,7 +95,16 @@
         </div>
 
         <footer>
+            <div class="footer-col">
+                <img src="img/github-com-logo.png" alt="github">
+            </div>
+            <div class="footer-col">
                 <p>© 2026</p>
+            </div>
+            <div class="footer-col">
+                <img src="img/rs-school-logo.svg" alt="rsschool">
+            </div>
+                
         </footer>
      </main>
 </body>
