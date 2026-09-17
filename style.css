@@ -1,0 +1,203 @@
+body {
+    background-color: var(--back-color);
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif  ;
+    font-size: large;
+}
+
+main{
+    max-width: 1200px;
+    background: var(--main);
+    color: var(--text);
+    height: auto;
+    margin: 0 auto;
+}
+.back-photo{
+    background-image: url('img/bb.png');
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 60%;
+    box-sizing: border-box;
+    margin-left: auto; 
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;    
+    padding: 10px 35px; 
+
+    font-size: small;
+    font-weight:bold;
+    color: #a7a5a4;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;         
+  gap: 15px;             
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+    vertical-align: middle;
+    margin-right: 5px;     
+}
+
+.cv-layout {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: 40% 2px 60%;
+  box-sizing: border-box;
+  align-items: start;   
+}
+.info-table{
+    margin-left: 40px;
+    font-size: large;
+}
+.info-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;   
+  gap: 60px;
+  align-items: start;   
+  margin-bottom: 100px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skills-col p {
+  margin: 8px 0 0 0;
+}
+
+footer{
+display: grid;
+grid-template-columns: 40% 20% 40%;
+justify-content: center;
+align-items: center; 
+box-sizing: border-box;
+padding-top: 10px;
+background-color: #FFB800;
+    text-align: center;
+    color: var(--footer-txt);
+}
+.footer-col{
+  gap: 60px;
+}
+
+footer img{
+ width: 15%;
+  height: 10%;
+  object-fit: cover;
+}
+
+
+/*fonts*/
+p{
+    font-weight: 100;
+    color: var(--text);
+}
+footer p{
+    color: var(--footer-txt);
+}
+h1,h2{
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    font-size: 1.5em;
+}
+
+.cv-layout a{
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 0 solid #FF5D00;
+    transition: 0.2s;
+}
+.cv-layout a:hover { border-bottom-width: 3px; }
+
+button {
+  all: unset;
+  cursor: pointer; 
+  color: var(--link); 
+}
+header a{
+  text-decoration: none;
+  color: var(--link);
+}
+header a.active{text-shadow: 0px 0px 20px #FF5D00; color:#FF5D00}
+           
+.info-title {
+  margin: 0;
+  line-height: 1;
+}
+
+.info-desc {
+  margin: 0;
+  line-height: 1.4;
+}
+.divider {
+  background: black;
+  width: 2px;
+  height: 90%;            
+}
+
+.theme-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: var(--img-theme);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.theme-label::before {
+    content: var(--label-text);
+}
+
+.photo-prof {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* buttons */
+.theme-btn {
+    cursor: pointer;
+    color: var(--btn-txt);
+}
+
+.theme-btn:hover .theme-label::before {
+    text-decoration: underline;
+}
+:root {
+  --back-color: #FFB800;
+  --main:       #ffffff;   /* фон страницы */
+  --text:       #222222;   /* основной текст */
+  --link:       #a7a5a4;   /* ссылки */
+  --btn-txt:    #a7a5a4;   /* текст кнопки */
+  --footer-txt: #737373;   /*текст футера*/
+  --img-theme:  url("img/light-star.png");
+  --label-text: "dark /";
+}
+
+:root:has(#theme-switch:checked) {
+  --back-color: #14140c;
+  --main:       #646044;   /* фон страницы */
+  --text:       #ffffff;   /* основной текст */
+  --link:       #ffffff;   /* ссылки */
+  --btn-txt:    #ffffff;   /* текст кнопки */
+  --footer-txt: rgb(59, 59, 59);   /*текст футера*/
+  --img-theme:  url("img/dark-star.png");
+  --label-text: "light /";
+}
